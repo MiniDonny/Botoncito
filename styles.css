@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+:root{
+    --color_1: #CCE0FF;
+    --color_2: #1E161F;
+    --color_3: #D65862;
+    --color_4: #EBFFFF;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button{
+    background-color: var(--color_1);
+    color: var(--color_2);
+    border: none;
+    padding: 50px;
+    border-radius: 20px;
+    transition: all 500ms;
+}
+
+button:hover{
+    font-family: 'Creepster', cursive;
+    background-color: var(--color_3);
+    color: var(--color_4);
+
+}
+
+.touchme:hover{
+    animation: button 2.5ms infinite;
+}
+
+
+@keyframes button{
+    0%{
+    }
+    25%{
+        transform: scale3d(1.5,1.5,0.3);
+    }
+    50%{
+        transform: scale3d(3,3,0.6);
+    }
+    75%{
+        transform: scale3d(9,9,1.2);
+    }
+    100%{
+    
+    }
+}
