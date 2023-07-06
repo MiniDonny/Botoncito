@@ -19,11 +19,12 @@ div{
 }
 
 button{
+    clip-path: polygon(48% 29%, 73% 15%, 93% 30%, 98% 61%, 81% 83%, 50% 100%, 25% 85%, 5% 62%, 7% 31%, 25% 16%);
     background-color: var(--color_1);
     color: var(--color_2);
     border: none;
     padding: 50px;
-    border-radius: 20px;
+    border-radius: 50px;
     transition: all 500ms;
 }
 
@@ -35,7 +36,7 @@ button:hover{
 }
 
 .touchme:hover{
-    animation: button 2.5ms infinite;
+    animation: button 500ms infinite;
 }
 
 
@@ -43,15 +44,38 @@ button:hover{
     0%{
     }
     25%{
-        transform: scale3d(1.5,1.5,0.3);
+        transform: scale(0.3);
     }
     50%{
-        transform: scale3d(3,3,0.6);
+        transform: scale(0.6);
     }
     75%{
-        transform: scale3d(9,9,1.2);
+        transform: scale(1.2);
     }
     100%{
     
+    }
+}
+
+.meme{
+    background-image: url(./papucho.gif);
+    width: 100vh;
+    background-repeat: no-repeat;
+    animation: meme 2s
+}
+
+.contenedor{
+    display: flex;
+    padding: 5px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@keyframes meme{
+    to{
+
+    }
+    from{
+        transform: rotate(-45deg);
     }
 }
